@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MY WEBSITE</title>
+  
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('image/back paper.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    /* Header GIF - Welcome Animation */
+    .welcome-section {
+      text-align: center;
+      margin: 20px 0; 
+    }
+
+    .welcome-section img {
+      width: 30%; 
+      max-height: 150px;
+      animation: bounce 2s ease infinite;
+    }
+
+    /* Animation */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      30% {
+        transform: translateY(-5px);
+      }
+      60% {
+        transform: translateY(-3px);
+      }
+    }
+
+    
+    .container {
+      width: 400px;
+      padding: 10px;
+      background-color: #107d36;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      color: white;
+      position: absolute;
+      top: 75%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Styling for buttons */
+    .button {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      color: white;
+      background-color: #000000;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #0d62da;
+    }
+  </style>
+</head>
+<body>
+  
+  
+  <div class="welcome-section">
+    <img src="gif/welcome gif.gif" alt="Welcome to my website">
+  </div>
+
+
+  <div class="container">
+    <h1>🌷HELLO WORLD! WELCOME TO ATHIRAH'S WEBSITE🌷</h1>
+    <a href="biodata.html" class="button" >Biodata</a>
+    <a href="my_family.html" class="button">My Family</a>
+    <a href="my_education.html" class="button">My Education</a>
+    <a href="my_fav_site.html" class="button">Favourite Site</a>
+    <a href="my_topfav.html" class="button">Favourite Entertainment</a>
+    <a href="gallery.html" class="button">Gallery</a>
+    <a href="my_contact.html" class="button">My Contact</a>
+  </div>
+
+</body>
+</html>
