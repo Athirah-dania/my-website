@@ -4,14 +4,12 @@
     </head>
     <style>
         
-    body
-    {
-        background-image: url(image/back\ paper.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-     }
-
-     .buttons {
+        body {
+            background-image: url(image/back\ paper.jpg);
+            background-size: 200%;
+            background-repeat: no-repeat;
+        }
+        .buttons {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -34,9 +32,36 @@
             background-color: #ff5733;
             transform: scale(1.1);
         }
+        
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(143, 192, 146, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px; 
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            border: 5px solid #3d2fce;
+            border-radius: 10px;
+            height: 190px;
+            width: 190px;
+            object-fit: cover;
+        }
     </style>
 
-    <h1 align="center">🌷MY EDUCATION 🌷</h1>
+    <body>
+        <h1 align="center">📚🎧☕My Education Journey📚🎧☕</h1>
+
         <div class="buttons">
             <a href="index.html" class="button">Homepage</a>
             <a href="my_family.html" class="button">My Family</a>
@@ -48,11 +73,11 @@
         </div>
 
 
-     <img src="image/dekan.jpg"
-     height="190" border="5" width="250"
-     hspace="10" vspace="10" style="float: right;" alt="family_grandma" >
+        <img src="image/dekan.jpg"
+        height="190" border="5" width="250"
+        hspace="10" vspace="10" style="float: right;" alt="family_grandma" >
    
-   <pre>
+    <pre>
     Education Journey
     2009-2010=Tadika Kemas Sepang,Selangor
     2011-2016= <abbr title="Sekolah Kebangsaan Bandar Salak Tinggi" >SKBBST</abbr>
@@ -60,9 +85,9 @@
     2022-2025=Diploma in Information Management,<abbr title="kolej pengajian pengkomputeran,informatik dan matematik">KPPIM</abbr>
     </pre>
 
-    
+        <br>
 
-        <h1>My Education Journey</h1>
+        
         <p>
             <h2> <font color="#3d2fce">In kindergaten school</font></h2>
             <b>while in kindergarten, I was the quietest girl, 
@@ -101,35 +126,37 @@
             support from family and friends, I strive to overcome challenges and achieve my goals.</b>
            </p>
 
-           <h1> My achievements</h1>    
 
-           <hr size="5" color="#3d2fce" width="90%">
-
-           <div align="center">
        
+        <h1> ✍My achievements✍</h1>    
+        <hr size="5" color="#3d2fce" width="90%">
            
-           <a href="image/tadika 1.jpg">
-           <img src="image/tadika 1.jpg"
-           height="290" border="4" width="270"
-           hspace="10" vspace="10" alt="tadika_athirah"></a>
-           <img src="image/spm.jpg"
-           height="290" border="4" width="250"
-           hspace="10" vspace="10" alt="athirah_pic_spm">
-           <img src="image/dekan sem4.jpg"
-           height="290" border="4" width="250"
-           hspace="10" vspace="10" alt="my_dekan_pic">
-           </div>
-       
-           <hr size="5" color="#3d2fce" width="90%">
+        <div class="content">
+            <hr>
+            <div class="image-container">
+            <a href="image/tadika 1.jpg">
+            <img src="image/tadika 1.jpg" alt="tadika_athirah">
+            </a>
+            <a href="image/spm.jpg">
+            <img src="image/spm.jpg" alt="athirah_pic_spm">
+            </a>
+            <a href="image/dekan sem4.jpg">
+            <img src="image/dekan sem4.jpg" alt="my_dekan_pic">
+            </a>
+            </div>
+            <hr>
+        </div>
+        <hr size="5" color="#3d2fce" width="90%">
+           
 
-           <h2> MY MINI TRANSKRIP</h2>
-           <a href="pdf/TRANSKRIP_MINI_ENG_HEA.pdf"> MINI_TRANSKRIP</a>
-           <br><p></p>
-          
+        <h2> MY MINI TRANSKRIP</h2>
+        <a href="pdf/TRANSKRIP_MINI_ENG_HEA.pdf"> MINI_TRANSKRIP</a>
+        <br><p></p>
+      
+        <a href="#top">back to top</a>
+    </body>
+</html>
 
-           <a href="#top">back to top</a>
-           </html>
-           </body>
 
           
        
