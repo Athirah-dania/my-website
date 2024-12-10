@@ -4,13 +4,16 @@
     </head>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 20px;
-            line-height: 1.6;
-            background-image: url(image/back\ paper.jpg);
-            background-size: 20;
-            background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0; /* Ensure the background covers the entire viewport */
+        padding: 0; /* Remove any default padding */
+        line-height: 1.6;
+        background-image: url("image/back paper.jpg");
+        background-size: cover; /* Ensures the image covers the entire background */
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* Makes the background stay fixed during scroll */
+        background-position: center; /* Ensures the image is centered */
         }
         h1, h2 {
             text-align: center;
@@ -69,70 +72,92 @@
     <h1> <font color="black"></font>My Favourite Entertainment</h1>
 
     <!-- Table 1: Favorite Music -->
-    <h2>Favorite Music</h2>
-    <table>
-        <caption> Table 1: favourite music</caption>
+<!-- Table 1: Favorite Music -->
+<h2>Favorite Music</h2>
+<table border="1">
+    <caption>Table 1: Favorite Music</caption>
+    <thead>
         <tr>
             <th>Genre</th>
-            <th>Artists</th>
-            <th>Images</th>
+            <th>Artist</th>
+            <th>Image</th>
         </tr>
+    </thead>
+    <tbody>
+        <!-- K-Pop -->
         <tr>
-            <td><b>K-Pop</b></td>
+            <td rowspan="3"><b>K-Pop</b></td>
+            <td>BTS</td>
             <td>
-                <ul style="list-style-type: square;">
-                    <li>BTS</li>
-                    <li>BLACKPINK</li>
-                    <li>BABYMONSTER</li>
-                </ul>
-            </td>
-            <td>
-                <h4>LISTEN ON SPOTIF Y▶︎•၊၊||၊|။||||။၊|။• </h4>
-                <img src="image/bts.jpg" alt="BTS" width="120">
-                <img src="image/blackpink.jpg" alt="BLACKPINK" width="120">
-                <img src="image/babymon.jpg" alt="BABYMONSTER" width="120">
-                <a href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX?si=DWIO3mTJSIa2XV7z4dxFEw" target="_blank">BTS</a>
-                <a href="https://open.spotify.com/artist/41MozSoPIsD1dJM0CLPjZF?si=o0zvo7G8SkOkmH7glxeOBg" target="_blank">BLACKPINK</a>
-                <a href="https://open.spotify.com/artist/1SIocsqdEefUTE6XKGUiVS?si=EAKhfrzIR4ikQClecGNGKw"target="_blank">BABY MONSTER</a>
+                <img src="image/bts.jpg" alt="BTS" width="120"><br>
+                <a href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX" target="_blank">Listen on Spotify</a>
             </td>
         </tr>
         <tr>
-            <td><b>Pop Ballads</b></td>
+            <td>BLACKPINK</td>
             <td>
-                <ul style="list-style-type: disc;">
-                    <li>Taylor Swift</li>
-                    <li>Jeff Satur</li>
-                    <li>Keshi</li>
-                </ul>
-            </td>
-            <td>
-                <img src="image/taylor.jpg" alt="Taylor Swift" width="120">
-                <img src="image/jeff.jpg" alt="Jeff Satur" width="120">
-                <img src="image/kehsi2.jpg" alt="Keshi" width="120">
-                <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02?si=SZLntnnVTciQ6uDluJlurw" target="_blank">TAYLOR SWIFT</a>
-                <a href="https://open.spotify.com/artist/5xq3BK55BJmutN0X7eTyQB?si=hrVeHAl0QS6vRwxI6Ixh8g" target="_blank">JEFF SATUR</a>
-                <a href="https://open.spotify.com/artist/3pc0bOVB5whxmD50W79wwO?si=C7EkrvZdRXmY8u8oJTHM6w" target="_blank">KESHI</a>
+                <img src="image/blackpink.jpg" alt="BLACKPINK" width="120"><br>
+                <a href="https://open.spotify.com/artist/41MozSoPIsD1dJM0CLPjZF" target="_blank">Listen on Spotify</a>
             </td>
         </tr>
         <tr>
-            <td><b>Pop</b></td>
+            <td>BABYMONSTER</td>
             <td>
-                <ul style="list-style-type: square;">
-                    <li>Sabrina Carpenter</li>
-                    <li>Ariana Grande</li>
-                    <li>Fourth Nattawat</li>
-                </ul>
-            </td>
-            <td>
-                <img src="image/sabrina.jpg" alt="Sabrina Carpenter" width="120">
-                <img src="image/GRANDE.jpg" alt="Ariana Grande" width="120">
-                <img src="image/fotfot.jpg" alt="Fourth Nattawat" width="120">
-                <a href="https://open.spotify.com/artist/74KM79TiuVKeVCqs8QtB0B?si=IDIn-mhOTsO2y9GCoHyEPw" target="_blank">SABRINA CARPENTER</a>
-                <a href="https://open.spotify.com/artist/66CXWjxzNUsdJxJ2JdwvnR?si=ZxTxj5tVQQyRRnUSZA-Kbg" target="_blank">ARIANA GRANDE</a>
-                <a href="https://open.spotify.com/artist/4PtJISxBNvXOwLxuQgUiyQ?si=3_MUdL9EQwa7OY5hnZkGtQ" target="_blank">FOURTH NATTAWAT</a>
+                <img src="image/babymon.jpg" alt="BABYMONSTER" width="120"><br>
+                <a href="https://open.spotify.com/artist/1SIocsqdEefUTE6XKGUiVS" target="_blank">Listen on Spotify</a>
             </td>
         </tr>
-    </table>
+
+        <!-- Pop Ballads -->
+        <tr>
+            <td rowspan="3"><b>Pop Ballads</b></td>
+            <td>Taylor Swift</td>
+            <td>
+                <img src="image/taylor.jpg" alt="Taylor Swift" width="120"><br>
+                <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02" target="_blank">Listen on Spotify</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Jeff Satur</td>
+            <td>
+                <img src="image/jeff.jpg" alt="Jeff Satur" width="120"><br>
+                <a href="https://open.spotify.com/artist/5xq3BK55BJmutN0X7eTyQB" target="_blank">Listen on Spotify</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Keshi</td>
+            <td>
+                <img src="image/kehsi2.jpg" alt="Keshi" width="120"><br>
+                <a href="https://open.spotify.com/artist/3pc0bOVB5whxmD50W79wwO" target="_blank">Listen on Spotify</a>
+            </td>
+        </tr>
+
+        <!-- Pop -->
+        <tr>
+            <td rowspan="3"><b>Pop</b></td>
+            <td>Sabrina Carpenter</td>
+            <td>
+                <img src="image/sabrina.jpg" alt="Sabrina Carpenter" width="120"><br>
+                <a href="https://open.spotify.com/artist/74KM79TiuVKeVCqs8QtB0B" target="_blank">Listen on Spotify</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Ariana Grande</td>
+            <td>
+                <img src="image/grande.jpg" alt="Ariana Grande" width="120"><br>
+                <a href="https://open.spotify.com/artist/66CXWjxzNUsdJxJ2JdwvnR" target="_blank">Listen on Spotify</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Fourth Nattawat</td>
+            <td>
+                <img src="image/fotfot.jpg" alt="Fourth Nattawat" width="120"><br>
+                <a href="https://open.spotify.com/artist/4PtJISxBNvXOwLxuQgUiyQ" target="_blank">Listen on Spotify</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 
      <!-- Video Section -->
       <h3> My favourite music video</h3>
