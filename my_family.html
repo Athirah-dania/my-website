@@ -6,15 +6,47 @@
         body
         {
             background-image: url(image/back\ paper.jpg);
-            background-size: 20'inc;
+            background-size: 200%;
             background-repeat: no-repeat;
         }
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            color: white;
+            background-color: black;
+            border: none;
+            border-radius: 25px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #ff5733;
+            transform: scale(1.1);
+        }
     </style>
-     
-   
+
+    <h1 align="center">ATHIRAH'S FAMILY</h1>
+        <div class="buttons">
+            <a href="homepage.html" class="button">Homepage</a>
+            <a href="my_family.html" class="button">My Family</a>
+            <a href="my_education.html" class="button">My Education</a>
+            <a href="my_fav_site.html" class="button">Favourite Site</a>
+            <a href="my_topfav.html" class="button">Favourite Entertainment</a>
+            <a href="gallery.html" class="button">Gallery</a>
+            <a href="my_contact.html" class="button">My Contact</a>
+        </div>
+
 
 <body>
-    <h1 align="center">ATHIRAH'S FAMILY</h1>
 
     <hr size="5" color="#3d2fce" width="90%">
 
@@ -114,7 +146,7 @@
         <h2 style="left">My sister</h2>
         <img src="image/afrina adik.jpg"
         height="290" border="5" width="250"
-        hspace="10" vspace="10" style="float:left;" alt="my_sister" >
+        hspace="10" vspace="10" style="float: left;" alt="my_sister" >
         <h3 style="text-align:justify;">
     <br>
          My younger sister is the only sister I have, and she means so much to me. 

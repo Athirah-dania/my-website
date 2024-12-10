@@ -7,13 +7,48 @@
         body
         {
             background-image: url(image/back\ paper.jpg);
-            background-size: 20'inc;
+            background-size: 200%;
             background-repeat: no-repeat;
          }
         h1{
             text-align: center;
         }
-        </style>
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            color: white;
+            background-color: black;
+            border: none;
+            border-radius: 25px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #ff5733;
+            transform: scale(1.1);
+        }
+    </style>
+
+    <h1>🌷MY FAVOURITE SITE🌷</h1>
+        <div class="buttons">
+            <a href="homepage.html" class="button">Homepage</a>
+            <a href="my_family.html" class="button">My Family</a>
+            <a href="my_education.html" class="button">My Education</a>
+            <a href="my_fav_site.html" class="button">Favourite Site</a>
+            <a href="my_topfav.html" class="button">Favourite Entertainment</a>
+            <a href="gallery.html" class="button">Gallery</a>
+            <a href="my_contact.html" class="button">My Contact</a>
+        </div>
+
 
         <h1>Favourite store</h1>
         
