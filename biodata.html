@@ -148,9 +148,21 @@
         </div>
 
         <footer>
-            &copy; 2024 Athirah(AD). All Rights Reserved.
-            <div class="last-update">Last Updated: December 16, 2024</div>
-        </footer>
+            <p>&copy; 2024 Athirah(AD). All Rights Reserved.</p>
+            <p class="last-update">
+              Last Updated: <span id="dateTime"></span>
+            </p>
+          </footer>
+        
+          <script>
+            function updateDateTime() {
+              const now = new Date();
+              const dateTimeElement = document.getElementById('dateTime');
+              dateTimeElement.innerText = now.toLocaleString(); // Display date and time in locale format
+            }
+            setInterval(updateDateTime, 1000); // Update every second
+            updateDateTime(); // Initial call to set the time immediately
+          </script>
      
     </body>
     </html>

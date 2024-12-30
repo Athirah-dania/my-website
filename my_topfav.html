@@ -245,14 +245,10 @@
      <!-- Video Section -->
       <h3> My favourite music video</h3>
      <div class="video-container">
-        <iframe width="560" height="305" 
-            src="https://www.youtube.com/embed/o0oW3lPoOXM" 
-            title="YouTube video player" 
-            frameborder="0" 
-            align="center"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
+        <iframe width="560" height="305"
+        src="https://www.youtube.com/embed/d3mqW9wqqx0?si=nH_IOtS5E4l_-BOQ"
+        style="display: block; margin: 0 auto;"></iframe>
+       
         
 
     </div>
@@ -307,7 +303,7 @@
     <iframe width="560" height="305"
      src="https://www.youtube.com/embed/mbujnYV-USc?si=MKpo7XdlMljqqvDO"
      style="display: block; margin: 0 auto;"></iframe>
-    <
+    
 
 
     <!-- Table 4: Favorite Series -->
@@ -353,10 +349,24 @@
             </ol>
         </li>
     </ul>
-    <footer>
-        &copy; 2024 Athirah(AD). All Rights Reserved.
-        <div class="last-update">Last Updated: December 16, 2024</div>
-    </footer>
+    <a href="#top" class="back-to-top">Top</a>
+
+        <footer>
+            <p>&copy; 2024 Athirah(AD). All Rights Reserved.</p>
+            <p class="last-update">
+              Last Updated: <span id="dateTime"></span>
+            </p>
+          </footer>
+        
+          <script>
+            function updateDateTime() {
+              const now = new Date();
+              const dateTimeElement = document.getElementById('dateTime');
+              dateTimeElement.innerText = now.toLocaleString(); // Display date and time in locale format
+            }
+            setInterval(updateDateTime, 1000); // Update every second
+            updateDateTime(); // Initial call to set the time immediately
+          </script>
 
 </body>
 </html>
