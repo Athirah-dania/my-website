@@ -71,12 +71,38 @@
     .button:hover {
       background-color: #0d62da;
     }
-   
+    #animatedText {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fceaea;
+      margin: 20px auto;
+      text-align: center;
+      height: 40px; /* Reserve space */
+    }
+    .ball {
+      width: 40px;
+      height: 30px;
+      background-color: #3948ca;
+      border-radius: 50%;
+      position: absolute;
+      top: 85%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: bounce 2s infinite ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+    }
    
   </style>
 </head>
 <body>
   
+  <link rel="stylesheet" href="style.css">
   
   <div class="welcome-section">
     <img src="gif/welcome gif.gif" alt="Welcome to my website">
@@ -84,7 +110,7 @@
 
 
   <div class="container">
-    <h1>🌷HELLO WORLD! WELCOME TO ATHIRAH'S WEBSITE🌷</h1>
+    <div id="animatedText"></div>
     <a href="biodata.html" class="button" >Biodata</a>
     <a href="my_family.html" class="button">My Family</a>
     <a href="my_education.html" class="button">My Education</a>
@@ -94,7 +120,43 @@
     <a href="my_contact.html" class="button">My Contact</a>
   </div>
    
- 
+  <div class="clock-container">
+    <div class="time" id="time"></div>
+    <div class="date" id="date"></div>
+</div>
+
+<script>
+    function updateClock() {
+        const now = new Date();
+        const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        const date = now.toLocaleDateString();
+
+        document.getElementById('time').textContent = time;
+        document.getElementById('date').textContent = date;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+
+<script>
+  const text = "🌷HELLO WORLD! WELCOME TO ATHIRAH'S WEBSITE🌷";
+  const animatedTextDiv = document.getElementById('animatedText');
+  let index = 0;
+
+  function typeAnimation() {
+      if (index < text.length) {
+          animatedTextDiv.textContent += text[index];
+          index++;
+          setTimeout(typeAnimation, 100); // Adjust speed here
+      }
+  }
+  typeAnimation();
+</script>
+
+<div class="ball">
+  <span class="ball-text">Hi</span>
+</div>
   
 
 
